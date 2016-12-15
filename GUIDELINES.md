@@ -3,10 +3,6 @@ Robot Sample Script for Web
 ## Robot Framework Guideline
 Below are the few key points that will help us follow an industry standard guidelines while using Robot framework for automation, that will further provide better understanding and lead us to more maintainable and readable code.
 
-Useful References:
-[https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst]
-[http://www.slideshare.net/pekkaklarck/robot-framework-dos-and-donts]
-[http://www.guru99.com/xpath-selenium.html]
 
 ### Test Suite / Script 
 
@@ -78,14 +74,36 @@ Useful References:
 
 ### Running Robot Scripts Smartly :
 
-1. Initial command :  pybot myscript.robot
-2. Running only single test :  pybot -t  “myscript.robot”
-3. Storing report in Result directory :  pybot -d Results  myscript.robot
-4. Running test cases by TagName:  pybot -i TagName myscript.robot
-5. Changing the report title:  pybot --reporttitle “My New Title” -d Results  myscript.robot
-6. Changing Log Title:  pybot --logtitle “My New Title” -d Results  myscript.robot
+1. Initial command :  
+```
+pybot myscript.robot
+```
+2. Running only single test :  
+```
+pybot -t  “myscript.robot
+```
+3. Storing report in Result directory :  
+```
+pybot -d Results  myscript.robot
+```
+4. Running test cases by TagName:  
+```
+pybot -i TagName myscript.robot
+```
+5. Changing the report title:  
+```
+pybot --reporttitle “My New Title” -d Results  myscript.robot
+```
+6. Changing Log Title:  
+```
+pybot --logtitle “My New Title” -d Results  myscript.robot
+```
 7. Making Critical and Non-critical test case in report by using Tagnames:  --critical(tag name)  &  --noncritical(tag name)
-8. Prevents duplicating Result/Log names :  pybot -d Results --timestampoutputs myscript.robot
+
+8. Prevents duplicating Result/Log names :  
+```
+pybot -d Results --timestampoutputs myscript.robot
+```
 9. Running only failed test cases :  --rerunfailed results/output.xml myscript.robot
 
 ### Some XPath Tricks :
@@ -105,6 +123,14 @@ Useful References:
 13. __RunTime XPath__ :  xpath=//*[contains(text(),"Any text __${firstname}__ ")]  where __${firstname}__ is the variable where we pass the dynamic/runtime value.
 
 
+## Useful References:
 
+[https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst]
+
+
+[http://www.slideshare.net/pekkaklarck/robot-framework-dos-and-donts]
+
+
+[http://www.guru99.com/xpath-selenium.html]
 
 
