@@ -80,7 +80,7 @@ pybot myscript.robot
 ```
 * __Running only single test__ :  
 ```
-pybot -t  “myscript.robot
+pybot -t  myscript.robot
 ```
 * __Storing report in Result directory__ :  
 ```
@@ -128,15 +128,18 @@ pybot -d Results --timestampoutputs myscript.robot
 ```
 * __If 2 or more same id present and want to select first id only__ :  
 ```
-xpath=(//input[@type='checkbox'])[first()]
+//input[@type='checkbox'])[first()]
 ```
 * __If 2 or more same id present and want to select last id only__ :  
 ```
-xpath=(//input[@type='checkbox'])[last()]
+//input[@type='checkbox'])[last()]
 ```
-* __You want to select second checkbox and forth checkbox then use below command__:  
+* __Select second checkbox and fourth checkbox then use below command__:  
 ```
-selenium.click("xpath=(//input[@type='checkbox'])[position()=2]"); selenium.click("xpath=(//input[@type='checkbox'])[position()=4]");
+//input[@type='checkbox'])[position()=2]")
+```
+```
+//input[@type='checkbox'])[position()=4]")
 ```
 * __To handle dynamically generated elements__ : 
 ```
@@ -164,9 +167,12 @@ selenium.click("xpath=(//input[@type='checkbox'])[position()=2]"); selenium.clic
 ```
 * __RunTime XPath__ :  
 ```
-xpath=//*[contains(text(),"Any text __${firstname}__ ")]  where __${firstname}__ is the variable where we pass the dynamic/runtime value.
+//*[contains(text(),"Any text __${firstname}__ ")]  where __${firstname}__ is the variable where we pass the dynamic/runtime value.
 ```
 
+##How to create virtual environment
+
+[Virtual environment in python](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
 ## Useful References:
 
