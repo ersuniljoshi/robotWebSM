@@ -19,6 +19,25 @@ sudo pip install robotframework
 sudo pip install robotframework-selenium2library
 ```
 
+  * Manual installation of Selenium2Library
+
+If you do not have network connection or cannot make proxy to work, you need to resort to manual installation. This requires installing both the library and its dependencies yourself.
+
+Make sure you have Robot Framework installed.
+
+Download source distributions (*.tar.gz) for the library and its dependencies:
+
+  1. [https://pypi.python.org/pypi/robotframework-selenium2library]
+
+  2. [https://pypi.python.org/pypi/selenium]
+
+  3. [https://pypi.python.org/pypi/decorator]
+
+
+Extract each source distribution to a temporary location.
+
+Go each created directory from the command line and install each project using:
+
 * __Install AppiumLibrary__
 ```
 sudo pip install robotframework-appiumlibrary
@@ -76,30 +95,30 @@ robot -d Results Tests/$Filename.robot$
 ## __Windows__
 
 * __Install pip and python__
-
-1. Navigate to python.org
-
-
-2. Download the windows installer
-
-
-3. Select “add python to PATH” option
-
-
-4. Verify c:\python27 exists
-
-
-5. Verify c:\python27\scripts\pip.exe exists
-
-
-6. Verify both directories are in path
-
-
-7. Type python -v in command line
-
-
-8. Type pip -v in command line
-
+```
+Navigate to python.org
+```
+```
+Download the windows installer
+```
+```
+Select “add python to PATH” option
+```
+```
+Verify c:\python27 exists
+```
+```
+Verify c:\python27\scripts\pip.exe exists
+```
+```
+Verify both directories are in path
+```
+```
+Type python -v in command line
+```
+```
+Type pip -v in command line
+```
 
 * __Install Robot Framework__
 ```
@@ -118,7 +137,7 @@ pip install robotframework-appiumlibrary
 
 * __Use Pycharm IDE__
 
-1.GO to jetbrains.com
+1. GO to jetbrains.com
 
 
 2. Click products> pycharm
