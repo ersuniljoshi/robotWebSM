@@ -77,13 +77,13 @@ sudo pip install robotframework-appiumlibrary
 
 5. __click on "+"__
 
-6. __start filling__:
+6. __start filling__
 
-7. __Name=Robot__, 
+7. __Name=Robot__
 
-8. __Program=robot__, 
+8. __Program=robot__
 
-9. __Parameters=-d Results $FileName$__, 
+9. __Parameters=-d Results $FileName$__
 
 10. __working directory=$FileDir$__
 
@@ -104,9 +104,9 @@ robot -d Results Tests/$Filename.robot$
 
 * [Robot with Pycharm](http://blog.bigbinary.com/2015/10/11/configuring-pycharm-to-run-tests.html)
 
-* [Robot with selenium grid](http://softwaretester.info/robot-framework-selenium-grid-2-0/)
+* [Robot with selenium grid 2.0](http://softwaretester.info/robot-framework-selenium-grid-2-0/)
 
-* [Robot with selenium grid](https://www.gridlastic.com/robot-framework-selenium-grid-example.html)
+* [Robot with selenium grid example](https://www.gridlastic.com/robot-framework-selenium-grid-example.html)
 
 * [Robot with appium for native app](https://www.youtube.com/watch?v=uYA893Rnqaw)
 
@@ -118,13 +118,13 @@ robot -d Results Tests/$Filename.robot$
 
 * [Robot with Jenkins](https://blog.codecentric.de/en/2016/07/robot-framework-tutorial-2016-integration-jenkins/)
 
-* [Read data from excel file in robot framework](https://www.youtube.com/watch?v=8hMEkeZKo68)
+* [Read data from excel file in robot framework-video](https://www.youtube.com/watch?v=8hMEkeZKo68)
 
-* [Read data from excel file in robot framework](http://www.ufthelp.com/2016/01/robot-framework-working-with-excel_28.html)
+* [Robot Framework-working with Excellibrary](http://www.ufthelp.com/2016/01/robot-framework-working-with-excel_28.html)
 
-* [Read data from excel file in robot framework](http://laurent.bristiel.com/robot-framework-and-excel/)
+* [Robot framework and Excel](http://laurent.bristiel.com/robot-framework-and-excel/)
 
-* [Read data from excel file in robot framework](https://media.readthedocs.org/pdf/robot-framework/latest/robot-framework.pdf)
+* [Robot framework documentation](https://media.readthedocs.org/pdf/robot-framework/latest/robot-framework.pdf)
 
 * [Read data from excel file in robot framework](https://blog.codecentric.de/en/2013/05/robot-framework-tutorial-loops-conditional-execution-and-more/)
 
@@ -236,13 +236,13 @@ Restart pycharm
 
 5. __click on "+"__
 
-6. __start filling__:
+6. __start filling__
 
-7. __Name=Robot__, 
+7. __Name=Robot__
 
-8. __Program=robot__, 
+8. __Program=robot__
 
-9. __Parameters=-d Results $FileName$__, 
+9. __Parameters=-d Results $FileName$__
 
 10. __working directory=$FileDir$__
 
