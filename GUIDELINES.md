@@ -114,19 +114,58 @@ pybot -d Results --timestampoutputs myscript.robot
 
 ### Some XPath Tricks :
 
-1. __To find a particular text from page__: //*[Contains(text(),"Help")]
-2. __To find a Anchor tag/Link from page__: /a[Contains(text),”Login”]
-3. __To find any Link/Text from class__ :   //*[@class=”links”]/li/a[Contains(text(),”Login”)]
-4. __If 2 or more same id present and want to select first id only__ :  xpath=(//input[@type='checkbox'])[first()]
-5. __If 2 or more same id present and want to select last id only__ :  xpath=(//input[@type='checkbox'])[last()]
-6. __You want to select second checkbox and forth checkbox then use below command__:  selenium.click("xpath=(//input[@type='checkbox'])[position()=2]"); selenium.click("xpath=(//input[@type='checkbox'])[position()=4]");
-7. __To handle dynamically generated elements__ :  //button[starts-with(@id, 'continue-')]
-8. __Match a suffix__ : //div[ends-with(@id,"suffixString")]
-9. __To get all Anchor tags from page__ : //a[starts-with(@href, '#')]
-10. __Selecting Any Attributes__ : //div[@name='continue'] ;  //input[@type='button']
-11. __Finding XPath direct by link__ : //*[text()='Login']
-12. __Link Search By href__ : //a[contains(@href,'av.iccsafe')]
-13. __RunTime XPath__ :  xpath=//*[contains(text(),"Any text __${firstname}__ ")]  where __${firstname}__ is the variable where we pass the dynamic/runtime value.
+* __To find a particular text from page__:
+```
+ //*[Contains(text(),"Help")]
+ ```
+* __To find a Anchor tag/Link from page__: 
+```
+/a[Contains(text),”Login”]
+```
+* __To find any Link/Text from class__ :   
+```
+//*[@class=”links”]/li/a[Contains(text(),”Login”)]
+```
+* __If 2 or more same id present and want to select first id only__ :  
+```
+xpath=(//input[@type='checkbox'])[first()]
+```
+* __If 2 or more same id present and want to select last id only__ :  
+```
+xpath=(//input[@type='checkbox'])[last()]
+```
+* __You want to select second checkbox and forth checkbox then use below command__:  
+```
+selenium.click("xpath=(//input[@type='checkbox'])[position()=2]"); selenium.click("xpath=(//input[@type='checkbox'])[position()=4]");
+```
+* __To handle dynamically generated elements__ : 
+```
+ //button[starts-with(@id, 'continue-')]
+ ```
+* __Match a suffix__ :
+```
+ //div[ends-with(@id,"suffixString")]
+ ```
+* __To get all Anchor tags from page__ : 
+```
+//a[starts-with(@href, '#')]
+```
+* __Selecting Any Attributes__ : 
+```
+//div[@name='continue'] ;  //input[@type='button']
+```
+* __Finding XPath direct by link__ :
+```
+ //*[text()='Login']
+ ```
+* __Link Search By href__ : 
+```
+//a[contains(@href,'av.iccsafe')]
+```
+* __RunTime XPath__ :  
+```
+xpath=//*[contains(text(),"Any text __${firstname}__ ")]  where __${firstname}__ is the variable where we pass the dynamic/runtime value.
+```
 
 
 ## Useful References:
