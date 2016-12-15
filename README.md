@@ -1,6 +1,6 @@
 # Pre-Requisites for running scripts on Robot Framework:
 
-## For __Ubuntu__
+  ##__For Ubuntu__
 
 *  __Install pip__
 ```
@@ -92,7 +92,7 @@ robot -d Results Tests/$Filename.robot$
 
 * [https://github.com/robotframework/robotframework/blob/master/doc/userguide/src/CreatingTestData/ResourceAndVariableFiles.rst#taking-resource-files-into-use] __Resource file & variable file__
 
-## __Windows__
+  ##__For Windows__
 
 * __Install pip and python__
 ```
@@ -136,30 +136,30 @@ pip install robotframework-appiumlibrary
 ```
 
 * __Use Pycharm IDE__
-
-1. GO to jetbrains.com
-
-
-2. Click products> pycharm
-
-
-3. Download & install community edition
-
-
-4. Launch Pycharm
-
-
-5. Open Files>Settings dialog
-
-
-6. Click on plugins
-
-
-7. Search “intellibot” plugin and install
-
-
-8. Restart pycharm
-
+```
+GO to jetbrains.com
+```
+```
+Click products> pycharm
+```
+```
+Download & install community edition
+```
+```
+Launch Pycharm
+```
+```
+Open Files>Settings dialog
+```
+```
+Click on plugins
+```
+```
+Search “intellibot” plugin and install
+```
+```
+Restart pycharm
+```
 
 #Configurations to be made in Pycharm IDE for running robot scripts:
 
