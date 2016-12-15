@@ -1,5 +1,4 @@
-# robotWebSM
-Robot Sample Script for Web
+
 ## Robot Framework Guideline
 Below are the few key points that will help us follow an industry standard guidelines while using Robot framework for automation, that will further provide better understanding and lead us to more maintainable and readable code.
 
@@ -100,7 +99,7 @@ pybot --logtitle “My New Title” -d Results  myscript.robot
 ```
 * __Making Critical and Non-critical test case in report by using Tagnames__: 
 ```
- --critical(tag name)  &  --noncritical(tag name)
+ pybot --critical(tag name) myscript.robot  &  pybot --noncritical(tag name) myscript.robot
  ```
 
 * __Prevents duplicating Result/Log names__ :  
@@ -109,7 +108,7 @@ pybot -d Results --timestampoutputs myscript.robot
 ```
 * __Running only failed test cases__ : 
 ```
- --rerunfailed results/output.xml myscript.robot
+ pybot --rerunfailed results/output.xml myscript.robot
  ```
 
 ### Some XPath Tricks :
@@ -120,7 +119,7 @@ pybot -d Results --timestampoutputs myscript.robot
  ```
 * __To find a Anchor tag/Link from page__: 
 ```
-/a[Contains(text),”Login”]
+//a[Contains(text),”Login”]
 ```
 * __To find any Link/Text from class__ :   
 ```
