@@ -1,0 +1,190 @@
+==============================================================================
+20161118 19:24:47.362 - INFO - + START SUITE: Create [ ]
+==============================================================================
+20161118 19:24:47.363 - INFO - +- START TEST: SM Create2 [ ]
+------------------------------------------------------------------------------
+20161118 19:24:47.363 - INFO - +-- START SETUP: Begin Test Case [ ]
+20161118 19:24:47.363 - INFO - +--- START KW: Selenium2Library.Open Browser [ ${SERVER} | ${BROWSER} | ${DESIRED_CAPABILITIES} | ${REMOTE_URL} ]
+20161118 19:24:47.364 - INFO - Opening browser 'chrome' to base url 'https://www.surveymonkey.com' through remote server at 'http://localhost:4444/wd/hub'
+20161118 19:25:08.887 - DEBUG - Opened browser with session id ac05f706-5ad5-4fb6-9bf1-9783c160aadd
+20161118 19:25:08.888 - INFO - +--- END KW: Selenium2Library.Open Browser (21525)
+20161118 19:25:08.889 - INFO - +-- END SETUP: Begin Test Case (21526)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20161118 19:25:08.890 - INFO - +-- START KW: SM_Creation.Given User is logged in [ ]
+20161118 19:25:08.890 - INFO - +--- START KW: SigninAction.Navigate sign in [ ]
+20161118 19:25:08.891 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@id='hd']/div/div/ol/li[1]/a ]
+20161118 19:25:08.891 - INFO - Clicking element 'xpath=.//*[@id='hd']/div/div/ol/li[1]/a'.
+20161118 19:25:11.081 - INFO - +---- END KW: Selenium2Library.Click Element (2190)
+20161118 19:25:11.082 - INFO - +--- END KW: SigninAction.Navigate sign in (2192)
+20161118 19:25:11.082 - INFO - +--- START KW: SigninAction.Do SignIn1 [ ]
+20161118 19:25:11.083 - INFO - +---- START KW: Selenium2Library.Input Text [ id=username | InfoBeans@Pune ]
+20161118 19:25:11.083 - INFO - Typing text 'InfoBeans@Pune' into text field 'id=username'
+20161118 19:25:11.247 - INFO - +---- END KW: Selenium2Library.Input Text (165)
+20161118 19:25:11.247 - INFO - +---- START KW: Selenium2Library.Input Password [ id=password | InfoBeans!@# ]
+20161118 19:25:11.248 - INFO - Typing password into text field 'id=password'
+20161118 19:25:11.351 - INFO - +---- END KW: Selenium2Library.Input Password (104)
+20161118 19:25:11.351 - INFO - +---- START KW: Selenium2Library.Click Button [ xpath=.//*[@id='sign_in_form']/fieldset/button ]
+20161118 19:25:11.352 - INFO - Clicking button 'xpath=.//*[@id='sign_in_form']/fieldset/button'.
+20161118 19:25:22.948 - INFO - +---- END KW: Selenium2Library.Click Button (11597)
+20161118 19:25:22.948 - INFO - +--- END KW: SigninAction.Do SignIn1 (11866)
+20161118 19:25:22.949 - INFO - +-- END KW: SM_Creation.Given User is logged in (14058)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20161118 19:25:22.949 - INFO - +-- START KW: SM_Creation.And User create survey [ ]
+20161118 19:25:22.950 - INFO - +--- START KW: CreateSurveys1.Create the survey [ ]
+20161118 19:25:22.951 - INFO - +---- START KW: Selenium2Library.Click Element [ css=a[class='create-survey btn green SL_split'] ]
+20161118 19:25:22.952 - INFO - Clicking element 'css=a[class='create-survey btn green SL_split']'.
+20161118 19:25:29.632 - INFO - +---- END KW: Selenium2Library.Click Element (6681)
+20161118 19:25:29.632 - INFO - +---- START KW: Selenium2Library.Input Text [ id=newName | TheNewSurvey1 ]
+20161118 19:25:29.632 - INFO - Typing text 'TheNewSurvey1' into text field 'id=newName'
+20161118 19:25:29.754 - INFO - +---- END KW: Selenium2Library.Input Text (122)
+20161118 19:25:29.755 - INFO - +---- START KW: Selenium2Library.Click Element [ id=newCategory ]
+20161118 19:25:29.755 - INFO - Clicking element 'id=newCategory'.
+20161118 19:25:29.919 - INFO - +---- END KW: Selenium2Library.Click Element (164)
+20161118 19:25:29.920 - INFO - +---- START KW: Selenium2Library.Click Element [ css=a[class='s1continue btn teal next'] ]
+20161118 19:25:29.920 - INFO - Clicking element 'css=a[class='s1continue btn teal next']'.
+20161118 19:25:30.014 - INFO - +---- END KW: Selenium2Library.Click Element (93)
+20161118 19:25:30.014 - INFO - +--- END KW: CreateSurveys1.Create the survey (7064)
+20161118 19:25:30.014 - INFO - +-- END KW: SM_Creation.And User create survey (7065)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20161118 19:25:30.014 - INFO - +-- START KW: SM_Creation.And User adds the page title [ ]
+20161118 19:25:30.015 - INFO - +--- START KW: AddThePageTitle.Add the title [ ]
+20161118 19:25:30.015 - INFO - +---- START KW: Selenium2Library.Wait Until Page Contains [ TheNewSurvey1 ]
+20161118 19:25:35.182 - INFO - +---- END KW: Selenium2Library.Wait Until Page Contains (5166)
+20161118 19:25:35.182 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@class='survey-page-header']/div[2]/div/h2/span[2] ]
+20161118 19:25:35.182 - INFO - Clicking element 'xpath=.//*[@class='survey-page-header']/div[2]/div/h2/span[2]'.
+20161118 19:25:35.386 - INFO - +---- END KW: Selenium2Library.Click Element (204)
+20161118 19:25:35.386 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:25:38.387 - INFO - Slept 3 seconds
+20161118 19:25:38.387 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:38.388 - INFO - +---- START KW: Selenium2Library.Click Element [ id=pageTitle ]
+20161118 19:25:38.389 - INFO - Clicking element 'id=pageTitle'.
+20161118 19:25:38.478 - INFO - +---- END KW: Selenium2Library.Click Element (90)
+20161118 19:25:38.478 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:25:41.479 - INFO - Slept 3 seconds
+20161118 19:25:41.480 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:41.480 - INFO - +---- START KW: Selenium2Library.Input Text [ id=pageTitle | Details ]
+20161118 19:25:41.482 - INFO - Typing text 'Details' into text field 'id=pageTitle'
+20161118 19:25:41.666 - INFO - +---- END KW: Selenium2Library.Input Text (186)
+20161118 19:25:41.667 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:25:44.668 - INFO - Slept 3 seconds
+20161118 19:25:44.669 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:44.669 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@id='editSurvey']/form[2]/div[3]/a[1] ]
+20161118 19:25:44.670 - INFO - Clicking element 'xpath=.//*[@id='editSurvey']/form[2]/div[3]/a[1]'.
+20161118 19:25:44.762 - INFO - +---- END KW: Selenium2Library.Click Element (92)
+20161118 19:25:44.762 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:25:47.763 - INFO - Slept 3 seconds
+20161118 19:25:47.763 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:47.764 - INFO - +--- END KW: AddThePageTitle.Add the title (17749)
+20161118 19:25:47.765 - INFO - +-- END KW: SM_Creation.And User adds the page title (17750)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20161118 19:25:47.766 - INFO - +-- START KW: SM_Creation.When User adds question [ ]
+20161118 19:25:47.766 - INFO - +--- START KW: AddQues.Add ques to survey [ ]
+20161118 19:25:47.766 - INFO - +---- START KW: Selenium2Library.Wait Until Page Contains [ TheNewSurvey1 ]
+20161118 19:25:47.804 - INFO - +---- END KW: Selenium2Library.Wait Until Page Contains (38)
+20161118 19:25:47.805 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@class='survey-page-body']/form/div[1]/div[2]/span/a[1]/span ]
+20161118 19:25:47.805 - INFO - Clicking element 'xpath=.//*[@class='survey-page-body']/form/div[1]/div[2]/span/a[1]/span'.
+20161118 19:25:47.889 - INFO - +---- END KW: Selenium2Library.Click Element (85)
+20161118 19:25:47.889 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:25:50.890 - INFO - Slept 3 seconds
+20161118 19:25:50.890 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:50.891 - INFO - +---- START KW: Selenium2Library.Unselect Checkbox [ xpath=//*[@id="suggestQ"] ]
+20161118 19:25:50.891 - INFO - Unselecting checkbox 'xpath=//*[@id="suggestQ"]'.
+20161118 19:25:50.955 - INFO - +---- END KW: Selenium2Library.Unselect Checkbox (65)
+20161118 19:25:50.956 - INFO - +---- START KW: BuiltIn.Sleep [ 2 ]
+20161118 19:25:52.956 - INFO - Slept 2 seconds
+20161118 19:25:52.958 - INFO - +---- END KW: BuiltIn.Sleep (2001)
+20161118 19:25:52.958 - INFO - +--- END KW: AddQues.Add ques to survey (5192)
+20161118 19:25:52.958 - INFO - +-- END KW: SM_Creation.When User adds question (5193)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20161118 19:25:52.958 - INFO - +-- START KW: SM_Creation.Then User creates the survey [ ]
+20161118 19:25:52.959 - INFO - +--- START KW: AddQues.Add to survey [ ]
+20161118 19:25:52.959 - INFO - +---- START KW: Selenium2Library.Wait Until Page Contains [ TheNewSurvey1 ]
+20161118 19:25:53.044 - INFO - +---- END KW: Selenium2Library.Wait Until Page Contains (85)
+20161118 19:25:53.045 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:25:56.045 - INFO - Slept 3 seconds
+20161118 19:25:56.046 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:56.047 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//a[@id='changeQType']/span[1] ]
+20161118 19:25:56.047 - INFO - Clicking element 'xpath=.//a[@id='changeQType']/span[1]'.
+20161118 19:25:56.160 - INFO - +---- END KW: Selenium2Library.Click Element (113)
+20161118 19:25:56.160 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@id='create']/ul/li[8]/a[1] ]
+20161118 19:25:56.160 - INFO - Clicking element 'xpath=.//*[@id='create']/ul/li[8]/a[1]'.
+20161118 19:25:56.371 - INFO - +---- END KW: Selenium2Library.Click Element (211)
+20161118 19:25:56.371 - INFO - +---- START KW: BuiltIn.Sleep [ 3s ]
+20161118 19:25:59.372 - INFO - Slept 3 seconds
+20161118 19:25:59.372 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:25:59.372 - INFO - +---- START KW: Selenium2Library.Input Text [ id=editTitle | Which is your favorite ice-cream ]
+20161118 19:25:59.372 - INFO - Typing text 'Which is your favorite ice-cream' into text field 'id=editTitle'
+20161118 19:25:59.660 - INFO - +---- END KW: Selenium2Library.Input Text (288)
+20161118 19:25:59.660 - INFO - +---- START KW: Selenium2Library.Click Element [ css=a[class='btn teal save'] ]
+20161118 19:25:59.661 - INFO - Clicking element 'css=a[class='btn teal save']'.
+20161118 19:25:59.808 - INFO - +---- END KW: Selenium2Library.Click Element (148)
+20161118 19:25:59.808 - INFO - +---- START KW: BuiltIn.Sleep [ 2s ]
+20161118 19:26:01.809 - INFO - Slept 2 seconds
+20161118 19:26:01.810 - INFO - +---- END KW: BuiltIn.Sleep (2002)
+20161118 19:26:01.810 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@class='survey-page-body']/form/div[1]/div[2]/span/a[1] ]
+20161118 19:26:01.811 - INFO - Clicking element 'xpath=.//*[@class='survey-page-body']/form/div[1]/div[2]/span/a[1]'.
+20161118 19:26:01.908 - INFO - +---- END KW: Selenium2Library.Click Element (98)
+20161118 19:26:01.908 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:26:04.908 - INFO - Slept 3 seconds
+20161118 19:26:04.909 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:26:04.909 - INFO - +---- START KW: Selenium2Library.Wait Until Page Contains [ TheNewSurvey1 ]
+20161118 19:26:04.970 - INFO - +---- END KW: Selenium2Library.Wait Until Page Contains (61)
+20161118 19:26:04.970 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:26:07.971 - INFO - Slept 3 seconds
+20161118 19:26:07.972 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:26:07.972 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//a[@id='changeQType']/span[1] ]
+20161118 19:26:07.973 - INFO - Clicking element 'xpath=.//a[@id='changeQType']/span[1]'.
+20161118 19:26:08.079 - INFO - +---- END KW: Selenium2Library.Click Element (107)
+20161118 19:26:08.079 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//*[@id='create']/ul/li[2]/a[1] ]
+20161118 19:26:08.079 - INFO - Clicking element 'xpath=.//*[@id='create']/ul/li[2]/a[1]'.
+20161118 19:26:08.296 - INFO - +---- END KW: Selenium2Library.Click Element (217)
+20161118 19:26:08.296 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:26:11.297 - INFO - Slept 3 seconds
+20161118 19:26:11.297 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:26:11.298 - INFO - +---- START KW: Selenium2Library.Wait Until Page Contains [ TheNewSurvey1 ]
+20161118 19:26:11.353 - INFO - +---- END KW: Selenium2Library.Wait Until Page Contains (55)
+20161118 19:26:11.354 - INFO - +---- START KW: Selenium2Library.Input Text [ id=editTitle | What is your gender? ]
+20161118 19:26:11.354 - INFO - Typing text 'What is your gender?' into text field 'id=editTitle'
+20161118 19:26:11.585 - INFO - +---- END KW: Selenium2Library.Input Text (231)
+20161118 19:26:11.585 - INFO - +---- START KW: Selenium2Library.Wait Until Page Contains [ What is your gender? ]
+20161118 19:26:11.642 - INFO - +---- END KW: Selenium2Library.Wait Until Page Contains (57)
+20161118 19:26:11.642 - INFO - +---- START KW: BuiltIn.Sleep [ 2 ]
+20161118 19:26:13.643 - INFO - Slept 2 seconds
+20161118 19:26:13.644 - INFO - +---- END KW: BuiltIn.Sleep (2001)
+20161118 19:26:13.645 - INFO - +---- START KW: Selenium2Library.Click Element [ xpath=.//table[@id='rows']/tbody/tr[3]/td[2]/div/div[1] ]
+20161118 19:26:13.646 - INFO - Clicking element 'xpath=.//table[@id='rows']/tbody/tr[3]/td[2]/div/div[1]'.
+20161118 19:26:13.764 - INFO - +---- END KW: Selenium2Library.Click Element (119)
+20161118 19:26:13.764 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:26:16.765 - INFO - Slept 3 seconds
+20161118 19:26:16.766 - INFO - +---- END KW: BuiltIn.Sleep (3002)
+20161118 19:26:16.766 - INFO - +---- START KW: Selenium2Library.Input Text [ xpath=.//table[@id='rows']/tbody/tr[3]/td[2]/div/div[1] | Male ]
+20161118 19:26:16.767 - INFO - Typing text 'Male' into text field 'xpath=.//table[@id='rows']/tbody/tr[3]/td[2]/div/div[1]'
+20161118 19:26:16.890 - INFO - +---- END KW: Selenium2Library.Input Text (124)
+20161118 19:26:16.890 - INFO - +---- START KW: BuiltIn.Sleep [ 2 ]
+20161118 19:26:18.891 - INFO - Slept 2 seconds
+20161118 19:26:18.891 - INFO - +---- END KW: BuiltIn.Sleep (2001)
+20161118 19:26:18.891 - INFO - +---- START KW: Selenium2Library.Input Text [ xpath=.//table[@id='rows']/tbody/tr[4]/td[2]/div/div[1] | Female ]
+20161118 19:26:18.891 - INFO - Typing text 'Female' into text field 'xpath=.//table[@id='rows']/tbody/tr[4]/td[2]/div/div[1]'
+20161118 19:26:19.105 - INFO - +---- END KW: Selenium2Library.Input Text (214)
+20161118 19:26:19.105 - INFO - +---- START KW: BuiltIn.Sleep [ 3 ]
+20161118 19:26:22.106 - INFO - Slept 3 seconds
+20161118 19:26:22.107 - INFO - +---- END KW: BuiltIn.Sleep (3001)
+20161118 19:26:22.107 - INFO - +---- START KW: Selenium2Library.Click Element [ css=a[class='btn teal save'] ]
+20161118 19:26:22.108 - INFO - Clicking element 'css=a[class='btn teal save']'.
+20161118 19:26:22.227 - INFO - +---- END KW: Selenium2Library.Click Element (120)
+20161118 19:26:22.228 - INFO - +---- START KW: BuiltIn.Sleep [ 2 ]
+20161118 19:26:24.228 - INFO - Slept 2 seconds
+20161118 19:26:24.229 - INFO - +---- END KW: BuiltIn.Sleep (2001)
+20161118 19:26:24.230 - INFO - +--- END KW: AddQues.Add to survey (31271)
+20161118 19:26:24.231 - INFO - +-- END KW: SM_Creation.Then User creates the survey (31272)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20161118 19:26:24.231 - INFO - +-- START TEARDOWN: End Test Case [ ]
+20161118 19:26:24.232 - INFO - +--- START KW: Selenium2Library.Close Browser [ ]
+20161118 19:26:24.233 - DEBUG - Closing browser with session id ac05f706-5ad5-4fb6-9bf1-9783c160aadd
+20161118 19:26:24.361 - INFO - +--- END KW: Selenium2Library.Close Browser (129)
+20161118 19:26:24.361 - INFO - +-- END TEARDOWN: End Test Case (130)
+------------------------------------------------------------------------------
+20161118 19:26:24.362 - INFO - +- END TEST: SM Create2 (96998)
+------------------------------------------------------------------------------
+20161118 19:26:24.364 - INFO - + END SUITE: Create (97418)
+==============================================================================
