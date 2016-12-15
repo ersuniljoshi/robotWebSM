@@ -74,37 +74,43 @@ Below are the few key points that will help us follow an industry standard guide
 
 ### Running Robot Scripts Smartly :
 
-1. Initial command :  
+* __Initial command__ :  
 ```
 pybot myscript.robot
 ```
-2. Running only single test :  
+* __Running only single test__ :  
 ```
 pybot -t  “myscript.robot
 ```
-3. Storing report in Result directory :  
+* __Storing report in Result directory__ :  
 ```
 pybot -d Results  myscript.robot
 ```
-4. Running test cases by TagName:  
+* __Running test cases by TagName__:  
 ```
 pybot -i TagName myscript.robot
 ```
-5. Changing the report title:  
+* __Changing the report title__:  
 ```
 pybot --reporttitle “My New Title” -d Results  myscript.robot
 ```
-6. Changing Log Title:  
+* __Changing Log Title__:  
 ```
 pybot --logtitle “My New Title” -d Results  myscript.robot
 ```
-7. Making Critical and Non-critical test case in report by using Tagnames:  --critical(tag name)  &  --noncritical(tag name)
+* __Making Critical and Non-critical test case in report by using Tagnames__: 
+```
+ --critical(tag name)  &  --noncritical(tag name)
+ ```
 
-8. Prevents duplicating Result/Log names :  
+* __Prevents duplicating Result/Log names__ :  
 ```
 pybot -d Results --timestampoutputs myscript.robot
 ```
-9. Running only failed test cases :  --rerunfailed results/output.xml myscript.robot
+* __Running only failed test cases__ : 
+```
+ --rerunfailed results/output.xml myscript.robot
+ ```
 
 ### Some XPath Tricks :
 
