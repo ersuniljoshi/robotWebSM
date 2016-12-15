@@ -11,7 +11,7 @@ ${BROWSER}  Chrome
 
 *** Keywords ***
 Begin Test Case
-    open browser    http://www.surveymonkey.com  ${SERVER}  ${BROWSER}  ${DESIRED_CAPABILITIES}  ${REMOTE_URL}
+    open browser  ${SERVER}  ${BROWSER}  ${DESIRED_CAPABILITIES}  ${REMOTE_URL}
     maximize browser window
 
 
