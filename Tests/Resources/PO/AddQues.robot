@@ -53,3 +53,4 @@ Add to survey
 # save the 2nd ques
     Click Element  css=a[class='btn teal save']
     sleep  2
+    mouse up  xpath=//a[@id="userAcctTab_MainMenu"]
