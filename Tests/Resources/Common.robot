@@ -15,4 +15,7 @@ Begin Test Case
     maximize browser window
 
 End Test Case
+    click element  xpath=//a[@id="userAcctTab_MainMenu"]
+    sleep  1
+    click element  xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']
     close browser
