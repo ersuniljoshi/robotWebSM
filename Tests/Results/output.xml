@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161216 14:04:13.370" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="C:\Users\Sunil\robotWebSM\Tests\Create.robot" id="s1" name="Create">
+<test id="s1-t1" name="SM_CreateSurvey">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<arg>${DESIRED_CAPABILITIES}</arg>
+<arg>${REMOTE_URL}</arg>
+</arguments>
+<msg timestamp="20161216 14:04:13.573" level="INFO">Opening browser 'Chrome' to base url 'https://www.surveymonkey.com' through remote server at 'http://localhost:4444/wd/hub'</msg>
+<msg timestamp="20161216 14:04:15.577" level="INFO">Could not get IP address for host: localhost</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161216 14:04:17.582" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:17.582" starttime="20161216 14:04:17.579"></status>
+</kw>
+<msg timestamp="20161216 14:04:17.582" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:17.585" level="FAIL">URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;</msg>
+<status status="FAIL" endtime="20161216 14:04:17.585" starttime="20161216 14:04:13.573"></status>
+</kw>
+<status status="FAIL" endtime="20161216 14:04:17.585" starttime="20161216 14:04:13.572"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[@id="userAcctTab_MainMenu"]</arg>
+</arguments>
+<msg timestamp="20161216 14:04:17.586" level="INFO">Clicking element 'xpath=//a[@id="userAcctTab_MainMenu"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161216 14:04:17.589" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:17.589" starttime="20161216 14:04:17.587"></status>
+</kw>
+<msg timestamp="20161216 14:04:17.589" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:17.590" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:17.590" starttime="20161216 14:04:17.586"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161216 14:04:18.590" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161216 14:04:18.590" starttime="20161216 14:04:17.590"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']</arg>
+</arguments>
+<msg timestamp="20161216 14:04:18.590" level="INFO">Clicking element 'xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161216 14:04:18.593" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:18.594" starttime="20161216 14:04:18.591"></status>
+</kw>
+<msg timestamp="20161216 14:04:18.594" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:18.594" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:18.594" starttime="20161216 14:04:18.590"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161216 14:04:18.595" starttime="20161216 14:04:18.595"></status>
+</kw>
+<status status="FAIL" endtime="20161216 14:04:18.595" starttime="20161216 14:04:17.586">Several failures occurred:
+
+1) No browser is open
+
+2) No browser is open</status>
+</kw>
+<doc>user adds question and creates the survey</doc>
+<tags>
+<tag>Web</tag>
+</tags>
+<status status="FAIL" endtime="20161216 14:04:18.595" critical="yes" starttime="20161216 14:04:13.571">Setup failed:
+URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open
+
+2) No browser is open</status>
+</test>
+<test id="s1-t2" name="SM_CreateLogin">
+<kw type="setup" name="Begin Test Case" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<arg>${DESIRED_CAPABILITIES}</arg>
+<arg>${REMOTE_URL}</arg>
+</arguments>
+<msg timestamp="20161216 14:04:18.598" level="INFO">Opening browser 'Chrome' to base url 'https://www.surveymonkey.com' through remote server at 'http://localhost:4444/wd/hub'</msg>
+<msg timestamp="20161216 14:04:20.599" level="INFO">Could not get IP address for host: localhost</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161216 14:04:22.609" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:22.610" starttime="20161216 14:04:22.607"></status>
+</kw>
+<msg timestamp="20161216 14:04:22.610" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:22.611" level="FAIL">URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;</msg>
+<status status="FAIL" endtime="20161216 14:04:22.611" starttime="20161216 14:04:18.597"></status>
+</kw>
+<status status="FAIL" endtime="20161216 14:04:22.612" starttime="20161216 14:04:18.597"></status>
+</kw>
+<kw type="teardown" name="End Test Case" library="Common">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[@id="userAcctTab_MainMenu"]</arg>
+</arguments>
+<msg timestamp="20161216 14:04:22.613" level="INFO">Clicking element 'xpath=//a[@id="userAcctTab_MainMenu"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161216 14:04:22.616" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:22.616" starttime="20161216 14:04:22.613"></status>
+</kw>
+<msg timestamp="20161216 14:04:22.616" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:22.617" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:22.617" starttime="20161216 14:04:22.612"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20161216 14:04:23.617" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20161216 14:04:23.617" starttime="20161216 14:04:22.617"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']</arg>
+</arguments>
+<msg timestamp="20161216 14:04:23.618" level="INFO">Clicking element 'xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20161216 14:04:23.620" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:23.620" starttime="20161216 14:04:23.618"></status>
+</kw>
+<msg timestamp="20161216 14:04:23.620" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:23.621" level="FAIL">No browser is open</msg>
+<status status="FAIL" endtime="20161216 14:04:23.621" starttime="20161216 14:04:23.617"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161216 14:04:23.622" starttime="20161216 14:04:23.621"></status>
+</kw>
+<status status="FAIL" endtime="20161216 14:04:23.622" starttime="20161216 14:04:22.612">Several failures occurred:
+
+1) No browser is open
+
+2) No browser is open</status>
+</kw>
+<doc>user logs in and creates the survey</doc>
+<tags>
+<tag>Web</tag>
+</tags>
+<status status="FAIL" endtime="20161216 14:04:23.622" critical="yes" starttime="20161216 14:04:18.596">Setup failed:
+URLError: &lt;urlopen error [Errno 10061] No connection could be made because the target machine actively refused it&gt;
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open
+
+2) No browser is open</status>
+</test>
+<doc>This is a basic info about the creation of survey test</doc>
+<status status="FAIL" endtime="20161216 14:04:23.623" starttime="20161216 14:04:13.374"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="2" pass="0">Web</stat>
+</tag>
+<suite>
+<stat fail="2" id="s1" name="Create" pass="0">Create</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20161216 14:04:17.582" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:17.589" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:18.594" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:22.610" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:22.616" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+<msg timestamp="20161216 14:04:23.620" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No browser is open</msg>
+</errors>
+</robot>

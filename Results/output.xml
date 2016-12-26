@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161118 19:24:11.598" generator="Robot 3.0 (Python 2.7.6 on linux2)">
+<suite source="/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Create.robot" id="s1" name="Create">
+<test id="s1-t1" name="SM Create2">
+<kw type="setup" name="Begin Test Case">
+<kw name="open browser">
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<arg>${DESIRED_CAPABILITIES}</arg>
+<arg>${REMOTE_URL}</arg>
+</arguments>
+<msg timestamp="20161118 19:24:11.622" level="FAIL">No keyword with name 'open browser' found.</msg>
+<status status="FAIL" endtime="20161118 19:24:11.622" starttime="20161118 19:24:11.622"></status>
+</kw>
+<status status="FAIL" endtime="20161118 19:24:11.622" starttime="20161118 19:24:11.621"></status>
+</kw>
+<kw type="teardown" name="End Test Case">
+<kw name="close browser">
+<msg timestamp="20161118 19:24:11.624" level="FAIL">No keyword with name 'close browser' found.</msg>
+<status status="FAIL" endtime="20161118 19:24:11.624" starttime="20161118 19:24:11.624"></status>
+</kw>
+<status status="FAIL" endtime="20161118 19:24:11.624" starttime="20161118 19:24:11.622">No keyword with name 'close browser' found.</status>
+</kw>
+<doc>Second one</doc>
+<tags>
+<tag>Web</tag>
+</tags>
+<status status="FAIL" endtime="20161118 19:24:11.625" critical="yes" starttime="20161118 19:24:11.620">Setup failed:
+No keyword with name 'open browser' found.
+
+Also teardown failed:
+No keyword with name 'close browser' found.</status>
+</test>
+<doc>This is a basic info about the creation of survey test</doc>
+<status status="FAIL" endtime="20161118 19:24:11.625" starttime="20161118 19:24:11.598"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Web</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Create" pass="0">Create</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20161118 19:24:11.612" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Create.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+<msg timestamp="20161118 19:24:11.614" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Resources/SM_Creation.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+<msg timestamp="20161118 19:24:11.615" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Resources/PO/SigninAction.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+<msg timestamp="20161118 19:24:11.616" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Resources/PO/CreateSurveys1.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+<msg timestamp="20161118 19:24:11.617" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Resources/PO/AddThePageTitle.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+<msg timestamp="20161118 19:24:11.619" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Resources/PO/AddQues.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+<msg timestamp="20161118 19:24:11.620" level="ERROR">Error in file '/home/vishal/forAppiumDemo/demo/robotWebDemo/Tests/Resources/PO/AddQues.robot': Importing test library 'Selenium2Library' failed: ImportError: No module named Selenium2Library
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/local/lib/python2.7/dist-packages/Appium_Python_Client-0.22-py2.7.egg
+  /usr/lib/python2.7
+  /usr/lib/python2.7/plat-x86_64-linux-gnu
+  /usr/lib/python2.7/lib-tk
+  /usr/lib/python2.7/lib-old
+  /usr/lib/python2.7/lib-dynload
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages/PILcompat
+  /usr/lib/python2.7/dist-packages/gtk-2.0
+  /usr/lib/pymodules/python2.7
+  /usr/lib/python2.7/dist-packages/ubuntu-sso-client</msg>
+</errors>
+</robot>
