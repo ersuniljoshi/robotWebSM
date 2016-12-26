@@ -13,3 +13,6 @@
 *.swo
 *.pyo
 Results
+*.png
+*.html
+*.xml
