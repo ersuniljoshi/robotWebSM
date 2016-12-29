@@ -10,7 +10,6 @@ Test Teardown  End Test Case
 SM_CreateSurvey
     [Documentation]  User adds question and creates the survey
     [Tags]  Web
-
     Given User is logged in
     And User create survey
     And User adds the page title
@@ -18,7 +17,6 @@ SM_CreateSurvey
     Then User creates the survey
     
 SM_CreateLogin
-
     [Documentation]  user logs in and creates the survey
     [Tags]  Web
     Given User is logged in

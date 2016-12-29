@@ -4,7 +4,7 @@ Resource  SigninAction.robot
 Resource  ./locator.robot
 
 *** Keywords ***
-Add the title
+Add The Title
     wait until page contains  TheNewSurvey1
     # click on add new ques button
     user waits for the page to load

@@ -15,6 +15,7 @@ Begin Test Case
     #open browser  ${SERVER}  ${BROWSER}  ${DESIRED_CAPABILITIES}  ${REMOTE_URL}
     open browser  ${SERVER}  ${BROWSER}
     maximize browser window
+
 End Test Case
     click element  ${sign_out_menu}
     sleep  1

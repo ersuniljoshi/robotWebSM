@@ -8,20 +8,17 @@ Resource  ./PO/AddQues.robot
 
 *** Keywords ***
 User is logged in
-    SigninAction.Navigate sign in
+    SigninAction.Navigate Sign In
     SigninAction.Do SignIn1
 
 User create survey
-    CreateSurveys1.Create the survey
+    CreateSurveys1.Create The Survey
 
 User adds the page title
-    AddThePageTitle.Add the title
+    AddThePageTitle.Add The Title
 
 User adds question
-    AddQues.Add ques to survey
+    AddQues.Add Question To Survey
 
 User creates the survey
-    AddQues.Add to survey
-
-
-
+    AddQues.Add To Survey

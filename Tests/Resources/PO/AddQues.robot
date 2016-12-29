@@ -4,7 +4,7 @@ Resource  SigninAction.robot
 Resource  ./locator.robot
 
 *** Keywords ***
-Add ques to survey
+Add Question To Survey
     # Click on add new question button
     wait until page contains  TheNewSurvey1
     user waits for the page to load
@@ -13,7 +13,8 @@ Add ques to survey
     unselect checkbox  ${checkbox}
     user waits for the page to load
     #Add Single tex question
-Add to survey
+
+Add To Survey
     # select from dropdown for 1st ques
     wait until page contains  TheNewSurvey1
     user waits for the page to load
