@@ -1,6 +1,7 @@
 *** Settings ***
 Library  Selenium2Library
 Resource  SigninAction.robot
+Resource  ./locator.robot
 
 *** Keywords ***
 Add the title
@@ -8,9 +9,9 @@ Add the title
     # click on add new ques button
     user waits for the page to load
     # click on add page title link
-    click element  xpath=//span[@class="page-title user-generated"]
+    click element  ${page_title_start}
     user waits for the page to load
-    input text  xpath=//div[@id="pageTitle"]  Details
+    input text  ${page_title_field}  Details
     user waits for the page to load
-    click element  xpath=//*[@id="pageTitleForm"]/div[3]/a[1]
+    click element  ${submit_page_title}
     user waits for the page to load
