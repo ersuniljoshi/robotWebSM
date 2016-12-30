@@ -1,14 +1,15 @@
 *** Settings ***
 Documentation  This is a basic info about the creation of surveys1
 Library  Selenium2Library
+Resource  PO/locator.robot
 
 *** Variables ***
 ${REMOTE_URL}  http://localhost:4444/wd/hub
 ${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:51.0.2704.106
 ${SERVER}   https://www.surveymonkey.com
 ${BROWSER}  Chrome
-${sign_out}  xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']
-${sign_out_menu}  xpath=//a[@id="userAcctTab_MainMenu"]
+#${sign_out}  xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']
+#${sign_out_menu}  xpath=//a[@id="userAcctTab_MainMenu"]
 
 *** Keywords ***
 Begin Test Case

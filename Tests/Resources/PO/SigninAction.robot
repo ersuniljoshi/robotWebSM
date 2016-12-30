@@ -7,7 +7,7 @@ Resource  ./locator.robot
 Navigate Sign In
     click element  ${sign_in}
 
-Do SignIn1
+Do The SignIn for SM
    input text  ${username}  InfoBeans@Pune
    input password  ${password}  InfoBeans!@#
    click button  ${sign_in_submit}
