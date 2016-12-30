@@ -8,8 +8,6 @@ ${REMOTE_URL}  http://localhost:4444/wd/hub
 ${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:51.0.2704.106
 ${SERVER}   https://www.surveymonkey.com
 ${BROWSER}  Chrome
-#${sign_out}  xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']
-#${sign_out_menu}  xpath=//a[@id="userAcctTab_MainMenu"]
 
 *** Keywords ***
 Begin Test Case
