@@ -17,6 +17,3 @@ Test_2
     switch browser  2
     input text  id=lst-ib  Info
     sleep  5
-
-
-
