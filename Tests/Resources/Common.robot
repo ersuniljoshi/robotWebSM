@@ -5,7 +5,7 @@ Resource  PO/locator.robot
 
 *** Variables ***
 ${REMOTE_URL}  http://localhost:4444/wd/hub
-${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:51.0.2704.106
+${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:56.0.2924.87
 ${SERVER}  https://www.surveymonkey.com
 ${BROWSER}  Chrome
 
