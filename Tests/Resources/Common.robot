@@ -8,12 +8,15 @@ ${REMOTE_URL}  http://localhost:4444/wd/hub
 ${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:56.0.2924.87
 ${SERVER}  https://www.surveymonkey.com
 ${BROWSER}  Chrome
+${Local}
+${Grid}
 
 *** Keywords ***
 Begin Test Case
-    open browser  ${SERVER}  ${BROWSER}  ${DESIRED_CAPABILITIES}  ${REMOTE_URL}
-    #open browser  ${SERVER}  ${BROWSER}
-    maximize browser window
+    ${mode}  set variable  ${Local}
+    ${mode}  set variable  ${Grid}
+    run keyword if  '${mode}'=='${Local}'  open browser  ${SERVER}  ${BROWSER}
+    run keyword if  '${mode}'=='${Grid}'  open browser  ${SERVER}  ${BROWSER}  ${DESIRED_CAPABILITIES}  ${REMOTE_URL}
 
 End Test Case
     click element  ${sign_out_menu}
