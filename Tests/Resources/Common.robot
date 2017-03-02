@@ -5,7 +5,7 @@ Resource  PO/locator.robot
 
 *** Variables ***
 ${hub_url}  http://localhost:4444/wd/hub
-${url}  https://www.surveymonkey.com
+${url}
 ${browser}  Chrome
 ${mode}
 ${platform}
