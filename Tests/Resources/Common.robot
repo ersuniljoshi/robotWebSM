@@ -4,21 +4,19 @@ Library  Selenium2Library
 Resource  PO/locator.robot
 
 *** Variables ***
-${REMOTE_URL}  http://localhost:4444/wd/hub
-#${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:56.0.2924.87
-${DESIRED_CAPABILITIES}  platform:LINUX,browser:chrome,version:55.0
-${SERVER}  https://www.surveymonkey.com
-${BROWSER}  Chrome
-${Local}
-${Grid}
+${hub_url}  http://localhost:4444/wd/hub
+${url}  https://www.surveymonkey.com
+${browser}  Chrome
+${mode}
+${platform}
+${version}
+${dc}
 
 *** Keywords ***
 Begin Test Case
-    ${mode}  set variable  ${Local}
-    ${mode}  set variable  ${Grid}
-    run keyword if  '${mode}'=='${Local}'  open browser  ${SERVER}  ${BROWSER}
-    run keyword if  '${mode}'=='${Grid}'  open browser  ${SERVER}  ${BROWSER}  ${DESIRED_CAPABILITIES}  ${REMOTE_URL}
-
+    log to console  ${mode}
+    run keyword if  '${mode}'=='local'  open browser  ${url}  ${browser}
+    run keyword if  '${mode}'=='grid'  open browser  ${url}  ${browser}  ${dc}  ${hub_url}
 End Test Case
     click element  ${sign_out_menu}
     sleep  1
