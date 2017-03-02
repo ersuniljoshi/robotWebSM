@@ -4,7 +4,7 @@ Library  Selenium2Library
 Resource  PO/locator.robot
 
 *** Variables ***
-${hub_url}  http://localhost:4444/wd/hub
+${hub_url}  
 ${url}
 ${browser}  Chrome
 ${mode}
