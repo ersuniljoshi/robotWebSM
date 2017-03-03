@@ -18,6 +18,7 @@ Begin Test Case
     log to console  ${mode}
     ${mode} =  convert to lowercase  ${mode}
     ${browser} =  convert to lowercase  ${browser}
+    ${platform} =  convert to lowercase  ${platform}
     run keyword if  '${mode}'=='local'  open browser  ${url}  ${browser}
     run keyword if  '${mode}'=='grid'  open browser  ${url}  ${browser}  ${dc}  ${hub_url}
 End Test Case
