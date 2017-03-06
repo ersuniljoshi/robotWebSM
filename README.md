@@ -257,4 +257,5 @@ Restart pycharm
 
 ```
 robot -d Results Tests/$Filename.robot$
+robot --variable mode:given_mode --variable browser:CHROME --variable dc:'platform:LINUX,browser:chrome,version:56.0.2924.87' --variable hub_url:'hub_url/wd/hub' --variable url:'https://www.surveymonkey.com' -x junit.xml Testfile-path
 ```
