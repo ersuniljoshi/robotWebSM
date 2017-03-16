@@ -20,9 +20,9 @@ Begin Test Case
     ${browser} =  convert to lowercase  ${browser}
     ${platform} =  convert to lowercase  ${platform}
     run keyword if  '${mode}'=='local'  open browser  ${url}  ${browser}
-    Maximize Browser Window
+    #Maximize Browser Window
     run keyword if  '${mode}'=='grid'  open browser  ${url}  ${browser}  ${dc}  ${hub_url}
-    Maximize Browser Window
+    #Maximize Browser Window
 End Test Case
     click element  ${sign_out_menu}
     sleep  1
