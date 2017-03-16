@@ -3,6 +3,7 @@ Library  Selenium2Library
 
 *** Variables ***
 ${sign_in}  xpath=//a[@class="sign-in"]
+${wrong_sign_in}  xpath=//a[@class="sign-in1"]
 ${username}  id=username
 ${password}  id=password
 ${sign_in_submit}  xpath=//button[@class="translate btn btn-large btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-dark yellow shadow" and @type="submit"]
@@ -20,8 +21,12 @@ ${single_textbox}  xpath=//a[contains(text(),'Single Textbox')]
 ${ques_edit_field}  id=editTitle
 ${save}  css=a[class='btn teal save']
 ${dropdown}  xpath=//a[.="Dropdown"]
-${dropdown_first_option}  xpath=.//table[@id='rows']/tbody/tr[3]/td[2]/div/div[1]
+#${dropdown_first_option}  xpath=.//table[@id='rows']/tbody/tr[3]/td[2]/div/div[1]
+${dropdown_first_option}  xpath=.//table[@id='rows']//tr[4]//div//span[@class='placeholder']
 ${dropdown_second_option}  xpath=.//table[@id='rows']/tbody/tr[4]/td[2]/div/div[1]
 ${mouse_scroll_up}  xpath=//a[@id="userAcctTab_MainMenu"]
 ${sign_out}  xpath=//a[@href="/user/sign-out/" and .= 'Sign Out']
 ${sign_out_menu}  xpath=//a[@id="userAcctTab_MainMenu"]
+
+${commentbox}  xpath=.//a[.='Comment Box']
+${commentbox_ques}  xpath=.//div[@id='questionTitleWrap']//tbody//td[2]/div[1]/span

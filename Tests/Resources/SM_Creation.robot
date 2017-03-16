@@ -22,3 +22,6 @@ User adds question
 
 User creates the survey
     AddQues.Add To Survey
+
+User clicks on wrong sign in
+    SigninAction.Click wrong sign in
