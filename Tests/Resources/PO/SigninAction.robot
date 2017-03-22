@@ -19,3 +19,6 @@ user waits for the page to load
      \  Log  ${IsAjaxComplete}
      \  sleep  1
      \  Run Keyword If  ${IsAjaxComplete}==True  Exit For Loop
+
+Click wrong sign in
+    click element  ${wrong_sign_in}
